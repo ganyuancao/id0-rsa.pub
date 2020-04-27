@@ -1,5 +1,8 @@
 # RSA - low entropy prime number 
 # paper reference: https://factorable.net/weakkeys12.extended.pdf
+# N = p * q for RSA keys
+# N_1 = p * q_1, N_2 = p * q_2 for key_1, key_2 
+# Find p with p = gcd(N_1, N_2)
 
 from Crypto.PublicKey import RSA
 from Crypto.Util import number
